@@ -5,17 +5,180 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Yigati Chemicals LLP</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fc;
+            color: #333;
+            transition: all 0.3s ease;
+        }
+
+        h1, h2 {
+            text-align: center;
+            animation: fadeIn 2s ease-out;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #0288d1;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: #222;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #0288d1;
+        }
+
+        /* Contact Information Styles */
+        .contact-info {
+            padding: 40px;
+            background-color: #fff;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            border-radius: 8px;
+            animation: slideIn 1s ease-out;
+        }
+
+        .contact-info h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-info ul {
+            list-style: none;
+        }
+
+        .contact-info ul li {
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
+
+        .contact-info a {
+            color: #0288d1;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Contact Form Styles */
+        .contact-form {
+            padding: 40px;
+            background-color: #fff;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            border-radius: 8px;
+            animation: slideIn 1s ease-out;
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form label {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .contact-form input:focus, .contact-form textarea:focus {
+            border-color: #0288d1;
+        }
+
+        .contact-form button {
+            padding: 10px;
+            background-color: #0288d1;
+            color: white;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+
+        .contact-form button:hover {
+            background-color: #0268a0;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+        }
+
+        /* Animation Effects */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateX(-50px); opacity: 0; }
+            100% { transform: translateX(0); opacity: 1; }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class="container">
+        <div>
             <h1>Contact Us</h1>
-            <p>Get in touch with Yigati Chemicals LLP for inquiries or partnerships.</p>
+            <p>Reach out to us for any inquiries or partnerships. We're happy to assist you!</p>
         </div>
     </header>
 
     <nav>
-        <ul class="navbar">
+        <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="services.html">Services</a></li>
@@ -25,7 +188,7 @@
 
     <main>
         <section class="contact-info">
-            <div class="container">
+            <div>
                 <h2>Contact Details</h2>
                 <ul>
                     <li><strong>Email:</strong> <a href="mailto:info@chemicalwasteplant.com">info@chemicalwasteplant.com</a></li>
@@ -33,13 +196,13 @@
                     <li><strong>Address:</strong> 123 Green Road, EcoCity, Aurangabad, Maharashtra, India</li>
                 </ul>
                 <h3>Meet Our Founders</h3>
-                <p><strong>Shyamsundar Vasantrao Ughan</strong> and <strong>Devendra Dinkarrao Deshmukh</strong> are the founders of Yigati Chemicals LLP. With years of experience in the industry, they lead the company with a strong commitment to sustainable practices and eco-friendly solutions in chemical waste management.</p>
+                <p><strong>Shyamsundar Vasantrao Ughan</strong> and <strong>Devendra Dinkarrao Deshmukh</strong> are the dynamic duo behind Yigati Chemicals LLP. They bring years of experience and commitment to the environmental and chemical waste management industry.</p>
                 <p>For more information, visit: <a href="https://www.zaubacorp.com/company/YIGATI-CHEMICALS-LLP/AAU-7071" target="_blank">Yigati Chemicals LLP on ZaubaCorp</a></p>
             </div>
         </section>
 
         <section class="contact-form">
-            <div class="container">
+            <div>
                 <h2>Contact Form</h2>
                 <form action="submit_form.php" method="post">
                     <label for="name">Name:</label>
@@ -58,9 +221,7 @@
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Yigati Chemicals LLP. All rights reserved.</p>
-        </div>
+        <p>&copy; 2024 Yigati Chemicals LLP. All rights reserved.</p>
     </footer>
 </body>
 </html>
