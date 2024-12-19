@@ -5,17 +5,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yigati Chemicals LLP - Sustainable Chemical Waste Management</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fc;
+        }
+
+        header {
+            background-color: #0288d1;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            animation: fadeIn 2s ease-out;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 10px 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #222;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #0288d1;
+        }
+
+        .hero {
+            background: url('your-image.jpg') center/cover no-repeat;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            animation: slideIn 1s ease-out;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+        }
+
+        .services, .about, .contact {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .services h2, .about h2, .contact h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .services p, .about p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            padding: 12px 25px;
+            background-color: #0288d1;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #0268a0;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateY(-50px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+    </style>
 </head>
 <body>
+
     <header>
-        <div class="container">
-            <h1>Welcome to Yigati Chemicals LLP</h1>
-            <p>Leading the way in sustainable chemical waste management and bromine recycling.</p>
-        </div>
+        <h1>Welcome to Yigati Chemicals LLP</h1>
+        <p>Recycling Industrial Waste, Creating Valuable Resources</p>
     </header>
 
     <nav>
-        <ul class="navbar">
+        <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="services.html">Services</a></li>
@@ -23,42 +138,33 @@
         </ul>
     </nav>
 
-    <main>
-        <section class="about-us">
-            <div class="container">
-                <h2>About Yigati Chemicals LLP</h2>
-                <p>Established in November 2020, Yigati Chemicals LLP is a Limited Liability Partnership firm registered in Mumbai, Maharashtra. We specialize in recycling industrial chemical waste, focusing on the recovery and purification of bromine for pharmaceutical applications.</p>
-                <p>Our commitment to sustainability and adherence to international environmental regulations ensure that we provide eco-friendly solutions to minimize industrial ecological footprints.</p>
-            </div>
-        </section>
+    <section class="hero">
+        <h2>Leading the Way in Sustainable Chemical Waste Management</h2>
+        <p>Our eco-friendly processes recycle industrial waste and supply pharmaceutical-grade bromine.</p>
+        <a href="services.html" class="button">Learn More About Our Services</a>
+    </section>
 
-        <section class="services">
-            <div class="container">
-                <h2>Our Services</h2>
-                <ul>
-                    <li>Comprehensive recycling of industrial chemical waste.</li>
-                    <li>Recovery and purification of bromine for pharmaceutical-grade applications.</li>
-                    <li>Consultation on sustainable waste management practices.</li>
-                    <li>Compliance assistance with environmental regulations.</li>
-                </ul>
-            </div>
-        </section>
+    <section class="services">
+        <h2>Our Services</h2>
+        <p>We provide comprehensive chemical waste management services to reduce environmental impact and create sustainable resources.</p>
+        <a href="services.html" class="button">Explore Services</a>
+    </section>
 
-        <section class="contact-info">
-            <div class="container">
-                <h2>Contact Information</h2>
-                <p><strong>Email:</strong> <a href="mailto:[email protected]">[email protected]</a></p>
-                <p><strong>Phone:</strong> +123-456-7890</p>
-                <p><strong>Address:</strong> Mogara Building, Flat No. G-8, Tirupati Park 3, CIDCO, Aurangabad, Maharashtra, India - 431001</p>
-            </div>
-        </section>
-    </main>
+    <section class="about">
+        <h2>About Us</h2>
+        <p>Yigati Chemicals LLP is committed to sustainability and innovation in chemical waste recycling, focusing on delivering high-quality bromine to pharmaceutical industries.</p>
+        <a href="about.html" class="button">More About Us</a>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out to us for inquiries or partnerships.</p>
+        <a href="contact.html" class="button">Contact Us</a>
+    </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Yigati Chemicals LLP. All rights reserved.</p>
-        </div>
+        <p>&copy; 2024 Yigati Chemicals LLP. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
-
